@@ -8,18 +8,19 @@ function ProjectItem({ header }) {
       <div className="project-Header">{header}</div>
       <div className="project-lists-wrapper">
         <div className="description-wrapper">
-          {header == "Projects" ? (
+          {header === "Projects" ? (
             <div>
               <Project />
               <Project />
               <Project />
             </div>
           ) : (
-            <>
-              <Skills />
-              <Skills />
-              <Skills />
-            </>
+            <div className="skills-wrap">
+              <Skills skill="ReactJs" />
+              <Skills skill="Js" />
+              <Skills skill="HTML" />
+              <Skills skill="CSS" />
+            </div>
           )}
         </div>
       </div>
