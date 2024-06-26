@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import product from "../../Images/product.png";
 import "../../App.css";
 import arrow from "../../Images/arrow.svg";
 import arrowback from "../../Images/arrowback.svg";
+import arrowbackwhite from "../../Images/arrowbackwhite.svg";
 import { Link } from "react-router-dom";
 import ProjectNav from "../ProjectItem/ProjectNav";
-import menu from "../../Images/menu.svg";
+import { ThemeContext } from "../../Theme/Theme";
 
 function ProView() {
+  const { theme } = useContext(ThemeContext);
   return (
     <div className="Project-preview-wrapper">
       {/* <div className="nav-menu-wrapper">
@@ -16,7 +18,11 @@ function ProView() {
 
       <div className="project-back-section">
         <Link to="/">
-          <img src={arrowback} alt="" className="backarrow" />
+          <img
+            src={theme === "light-theme" ?  arrowback : arrowbackwhite}
+            alt=""
+            className="backarrow"
+          />
         </Link>
         <div className="subHeader proview-Header">Cuurency</div>
       </div>
