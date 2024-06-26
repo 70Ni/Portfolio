@@ -8,23 +8,27 @@ import Navigation from "./Components/Navigation/Navigation";
 import ProView from "./Components/ProVIew/ProView";
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import Home from "./Components/Home/Home";
+import { ThemeContext } from "./Theme/Theme";
+import { useContext } from "react";
 
 // https://nimishjn.medium.com/toggle-theme-in-reactjs-4095dd35c69d
 
 function App() {
+  const { theme } = useContext(ThemeContext);
+
   return (
-    <BrowserRouter>
-      <Navigation />
-      <div className="App">
+      <div className={`App ${theme}`}>
         <div className="Hero-wrapper">
-          <Routes>
-            <Route path="/" element={<Home />}></Route>
-            <Route path="/profile" element={<ProView />}></Route>
-          </Routes>
+          <BrowserRouter>
+            <Navigation />
+            <Routes>
+              I<Route path="/" element={<Home />}></Route>
+              <Route path="/profile" element={<ProView />}></Route>
+            </Routes>
+            <Footer />
+          </BrowserRouter>
         </div>
       </div>
-      <Footer />
-    </BrowserRouter>
   );
 }
 
