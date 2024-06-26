@@ -1,11 +1,15 @@
-import React, { useRef } from "react";
-import profile from "../../Images/profile.png";
+import React, { useContext, useRef } from "react";
+import profile from "../../Images/profil.png";
 import copy from "../../Images/copy.svg";
+import copydark from "../../Images/file.svg";
+import { ThemeContext } from "../../Theme/Theme";
 
 const email = "4thedevelopments@gmail.com";
 const link = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}`;
 
 function About() {
+  let { theme } = useContext(ThemeContext);
+  console.log(theme, "fromcopy");
   const gmailid = useRef(null);
   const textCopy = () => {
     navigator.clipboard.writeText(gmailid.current.innerHTML);
@@ -22,7 +26,7 @@ function About() {
             {email}
           </a>
           <img
-            src={copy}
+            src={theme === "light-theme" ? copydark : copy}
             alt="copyemail"
             className="copytext"
             onClick={() => {
