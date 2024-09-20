@@ -4,6 +4,6 @@ google_analytics: G-CM7XM7GS22
 
 # Build settings
 remote_theme: jekyll/minima
-
+theme: jekyll-theme-minimal
 plugins:
   - jekyll-remote-theme
