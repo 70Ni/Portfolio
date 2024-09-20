@@ -5,15 +5,18 @@
   --primary-white: rgb(255, 255, 255);
   --button-white: #c9c9c9;
   --button-dark: #555555;
+  --text-font-color: #1d1d1d;
 }
 
 .dark-theme {
+  --headers: var(--primary-white);
   --text-color: var(--primary-white);
   --background-color: var(--primary-dark);
   --button-color: var(--button-dark);
 }
 
 .light-theme {
+  --headers: var(--text-font-color);
   --text-color: var(--primary-dark);
   --background-color: var(--primary-white);
   --button-color: var(--button-white);
@@ -79,7 +82,9 @@
 }
 .proview-Header {
   text-align: center;
-  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .button {
   color: #ffff;
@@ -160,7 +165,7 @@ a {
   font-family: "Inter", serif;
   font-size: 24px;
   line-height: 34px;
-  color: #555555;
+  color: var(--headers);
   margin-bottom: 8px;
 }
 .skill-text {
@@ -263,25 +268,56 @@ a {
 }
 
 /* ///////////////////////// */
-
 .project-wrapper {
-  background: linear-gradient();
-  position: relative;
-  padding: 14px 0; /* Optional: Add padding for aesthetics */
+  border-top: 0.5px solid var(--button-dark);
+
+  display: flex;
+  justify-content: center;
 }
-.gradientview {
-  width: 30px;
-  height: 30px;
-  right: 0px;
-  border-radius: 200px;
-  background-color: white;
+/* 
+.gradientviewR {
   position: absolute;
+  right: -12px;
+  cursor: pointer;
+  top: 80px;
+  rotate: 180deg;
+  z-index: 5;
 }
-.project-nav-wrapper {
-  overflow-x: auto; /* Enable horizontal scrolling */
+.gradientviewL {
+  position: absolute;
+  cursor: pointer;
+  left: -12;
+  z-index: 3;
+  top: 80px;
+  z-index: 5;
+} */
+.scrolls {
+  padding: 24px 0px;
   display: flex; /* Ensure items are displayed inline */
   gap: 18px;
+}
+@media screen and (max-width: 524px) {
+  .proview-Header {
+    font-size: 48px;
+    margin: 20px 0px;
+  }
+}
+/* .trnlteR {
+  transform: translateX(-284px);
+  transition-duration: 400ms;
+}
+.trnlteL {
+  transform: translateX(-284px);
+  transition-duration: 400ms;
+} */
+.project-nav-wrapper {
+  overflow-x: auto; /* Enable horizontal scrolling */
+  margin-bottom: 24px;
+
   /* justify-content: center; */
+}
+.project-nav-wrapper {
+  display: flex;
 }
 
 /* Media queries for responsiveness */
@@ -289,6 +325,7 @@ a {
   .project-back-section {
     flex-direction: column;
     align-items: flex-start;
+    margin-top: 20px;
   }
 
   .button-wrapper {
