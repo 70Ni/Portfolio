@@ -1,5 +1,5 @@
 import React, { useContext, useRef } from "react";
-import profile from "../../Images/profil.png";
+import profile from "../../Images/profile.png";
 import copy from "../../Images/copy.svg";
 import copydark from "../../Images/file.svg";
 import { ThemeContext } from "../../Theme/Theme";

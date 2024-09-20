@@ -8,8 +8,8 @@ import Footer from "../Footer/Footer";
 
 function Home() {
   return (
-    <div className="App">
-      <div className="Hero-wrapper">
+    <div className="outerwrapper">
+      <div className="innerwrapper">
         <About />
         <Intro />
         <ProjectItem header={"Projects"} />

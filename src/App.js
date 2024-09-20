@@ -17,18 +17,20 @@ function App() {
   const { theme } = useContext(ThemeContext);
 
   return (
-      <div className={`App ${theme}`}>
-        <div className="Hero-wrapper">
-          <BrowserRouter>
-            <Navigation />
-            <Routes>
-              I<Route path="/" element={<Home />}></Route>
-              <Route path="/profile" element={<ProView />}></Route>
-            </Routes>
-            <Footer />
-          </BrowserRouter>
-        </div>
+    <div className={`App ${theme}`}>
+      <div className="Hero-wrapper">
+        <div className="wrp">
+        <BrowserRouter>
+          <Navigation />
+          <Routes>
+            <Route path="/" element={<Home />}></Route>
+            <Route path="/projects" element={<ProView />}></Route>
+          </Routes>
+          <Footer />
+        </BrowserRouter>
       </div>
+      </div>
+    </div>
   );
 }
 

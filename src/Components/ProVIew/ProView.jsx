@@ -19,14 +19,14 @@ function ProView() {
       <div className="project-back-section">
         <Link to="/">
           <img
-            src={theme === "light-theme" ?  arrowback : arrowbackwhite}
+            src={theme === "light-theme" ? arrowback : arrowbackwhite}
             alt=""
             className="backarrow"
           />
         </Link>
         <div className="subHeader proview-Header">Cuurency</div>
       </div>
-      <div className="pro-view-para para">
+      <div className="pro-view-para para ">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, nisi
         minima sunt ut quos eaque repudiandae minus sit facilis enim harum
         corrupti dicta quia! Quasi repellendus recusandae possimus qui unde.
@@ -41,10 +41,13 @@ function ProView() {
           Currency App <img src={arrow} alt="" />
         </button>
       </div>
-      <div className="project-nav-wrapper">
-        <ProjectNav />
-        <ProjectNav />
-        <ProjectNav />
+      <div className="project-wrapper">
+        <div className="gradientview"></div>
+        <div className="project-nav-wrapper">
+          <ProjectNav className="project-nav" />
+          <ProjectNav className="project-nav" />
+          <ProjectNav className="project-nav" />
+        </div>
       </div>
     </div>
   );
