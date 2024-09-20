@@ -1,0 +1,8 @@
+title: My portfolio works
+email:
+
+# Build settings
+remote_theme: jekyll/minima
+
+plugins:
+  - jekyll-remote-theme
