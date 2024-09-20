@@ -1,5 +1,6 @@
 title: My portfolio works
 email:
+google_analytics: G-CM7XM7GS22
 
 # Build settings
 remote_theme: jekyll/minima
