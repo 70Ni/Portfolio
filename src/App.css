@@ -37,6 +37,20 @@
   margin: 0 auto;
   width: 100%;
 }
+.email-popUp {
+  transition-duration: 700ms;
+  animation-duration: 700ms;
+  position: absolute;
+  right: 38px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: 1px solid green;
+  background-color: var(--background-color);
+  color: var(--primary-white);
+}
+.emailPop-text {
+  font-size: 14px !important;
+}
 .Headerfont {
   font-family: "Source Serif 4", serif;
   font-size: 100px;
@@ -68,6 +82,9 @@
   color: #555555;
   opacity: 0.7;
   cursor: pointer;
+}
+.about-det-w {
+  position: relative;
 }
 .Hero-wrapper {
   max-width: 1080px;
