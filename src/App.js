@@ -26,14 +26,14 @@ function App() {
     <div className={`App ${theme}`}>
       <div className="Hero-wrapper">
         <div className="wrp">
-          <HashRouter>
+          <BrowserRouter>
             <Navigation />
             <Routes>
               <Route path="/" element={<Home />}></Route>
               <Route path="/projects" element={<ProView />}></Route>
             </Routes>
             <Footer />
-          </HashRouter>
+          </BrowserRouter>
         </div>
       </div>
     </div>
