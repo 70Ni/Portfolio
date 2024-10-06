@@ -1,5 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
+import { SpeedInsights } from "@vercel/speed-insights/react"
+
 import Intro from "./Components/Intro/Intro";
 import About from "./Components/About/About";
 import ProjectItem from "./Components/ProjectItem/ProjectItem";
@@ -34,6 +36,7 @@ function App() {
             </Routes>
             <Footer />
           </BrowserRouter>
+          <SpeedInsights />
         </div>
       </div>
     </div>
