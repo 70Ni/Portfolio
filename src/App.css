@@ -291,6 +291,13 @@ a {
   display: flex;
   justify-content: center;
 }
+.emptypage {
+  width: 100%;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* 
 .gradientviewR {
   position: absolute;

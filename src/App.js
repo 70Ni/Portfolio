@@ -18,6 +18,7 @@ import {
 import Home from "./Components/Home/Home";
 import { ThemeContext } from "./Theme/Theme";
 import { useContext } from "react";
+import EmptyPage from "./Components/EmptyPage";
 
 // https://nimishjn.medium.com/toggle-theme-in-reactjs-4095dd35c69d
 
@@ -32,6 +33,7 @@ function App() {
             <Navigation />
             <Routes>
               <Route path="/" element={<Home />}></Route>
+              <Route path="*" element={<EmptyPage />}></Route>
               <Route path="/projects" element={<ProView />}></Route>
             </Routes>
             <Footer />
