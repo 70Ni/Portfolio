@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "title": "Currency Range",
+    "content": "The world Currency dashboard share information about world currency. Includes collect currency value from the api and filtering data. This is organized and shared in a presentable view through dashboard",
+    "para": "The Currency dashboard is designed to provide users with real-time exchange rates and fluctuations for global currencies. It help in stay informed about currency values and market trends. Converter that allows users to calculate values between different currencies quickly.",
+    "footerpara": "Source code and more Documentation below",
+    "brief": "world currency value details and graph"
+  },
+  {
+    "id": 2,
+    "title": "Inventory Dashboard",
+    "para": "The Inventory Management dashboard is a powerful tool designed to help businesses efficiently track, manage, and optimize their inventory. It streamlines inventory processes, reduces errors, and enhances visibility across the supply chain.",
+    "footerpara": "Source code and more Documentation below",
+    "brief": "A Sales and Analytics dashboard show the clothing based details"
+  },
+  {
+    "id": 3,
+    "title": "Weather View",
+    "para": "The Weather App is a user-friendly application that provides real-time weather updates, forecasts. It caters to individuals and businesses looking to stay informed about weather conditions, helping them plan their activities accordingly.",
+    "footerpara": "Source code and more Documentation below",
+    "brief": "Weather application with details of temperature,humidity, and location "
+  },
+  {
+    "id": 4,
+    "title": "BankDash",
+    "para": "Bank dash is a dashboard UI, shows details about the credit cards and transactions.",
+    "footerpara": "Source code and more Documentation below",
+    "brief": "A Dashboard UI shows different transaction and analytics"
+  }
+]

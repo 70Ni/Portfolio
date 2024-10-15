@@ -1,23 +1,47 @@
 [
   {
     "projectId": 1,
-    "title": "Currency rate",
-    "content": "content",
+    "title": "Currency Range",
+    "para": "",
+    "footerpara": "",
+    "brief": "",
+
     "link": "",
+    "github": "https://github.com/70Ni/Currency-exchange",
+    "notion": "https://aback-tourmaline-914.notion.site/Currency-converter-10af5c104b1b8011a8f0f2f45bfaeea7"
+  },
+  {
+    "projectId": 2,
+    "title": "Inventory Dashboard",
+    "para": "",
+    "footerpara": "",
+    "brief": "",
+
+    "link": "",
+    "github": "https://github.com/70Ni/salesandanalytics",
+    "notion": "https://aback-tourmaline-914.notion.site/Sales-Analytics-Dashboard-c8de7e925cc54cae8a2da338cd7bc507?pvs=25",
     "img": ""
   },
   {
-    "projectId": 1,
-    "title": "Currency rate",
-    "content": "content",
+    "projectId": 3,
+    "title": "Weather View",
+    "para": "",
+    "footerpara": "",
+    "brief": "",
+
     "link": "",
-    "img": ""
+    "github": "https://github.com/70Ni/WeatherApp",
+    "notion": "https://aback-tourmaline-914.notion.site/Weather-App-10af5c104b1b80d98699f0fe78677556?pvs=25"
   },
   {
-    "projectId": 1,
-    "title": "Currency rate",
-    "content": "content",
+    "projectId": 4,
+    "title": "BankDash",
+    "para": "",
+    "footerpara": "",
+    "brief": "",
+
     "link": "",
-    "img": ""
+    "github": "https://github.com/70Ni/bankdashs",
+    "notion": "https://aback-tourmaline-914.notion.site/Bankdash-116f5c104b1b80af9449c003ba18acae?pvs=25"
   }
 ]
