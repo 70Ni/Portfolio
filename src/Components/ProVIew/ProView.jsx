@@ -7,7 +7,29 @@ import arrowbackwhite from "../../Images/arrowbackwhite.svg";
 import { Link, useHref } from "react-router-dom";
 import ProjectNav from "../ProjectItem/ProjectNav";
 import { ThemeContext } from "../../Theme/Theme";
+import notionIcon from "../../Images/notion.svg";
+import GitIcon from "../../Images/github.png";
 import arrowIcon from "../../Images/Group 12.svg";
+import content from "../../api/Content.json";
+import projects from "../../api/Projects.json";
+import img from "../../api/img.json";
+
+const cont = content;
+const jsonProjects = projects;
+const thumbnail = img;
+let mergeJson = jsonProjects.map((content) => {
+  let text = cont.find((para) => para.title === content.title);
+  let images = thumbnail.find((img) => img.title === content.title);
+  return [
+    {
+      ...content,
+      ...(text || {}),
+      ...(images || {}),
+    },
+  ];
+});
+
+console.log(mergeJson);
 
 function ProView() {
   const { theme } = useContext(ThemeContext);
@@ -18,59 +40,87 @@ function ProView() {
   const handleScrollRight = () => {
     setTranslateX((prev) => prev - 284); // Adjust the value for scroll distance
   };
+
+  function getRandomFloat(min, max) {
+    return Math.floor(Math.random() * (max - min) + min);
+  }
+
+  // Example: Random float between 1 and 10
+  const randomFloat = getRandomFloat(1, 4);
+  console.log(randomFloat);
+
+  const newArray = mergeJson.filter((item) => item[0].id !== randomFloat);
+  console.log(newArray);
+
   return (
     <div className="Project-preview-wrapper">
-      {/* <div className="nav-menu-wrapper">
+      {mergeJson[randomFloat].map((work) => {
+        return (
+          <div className="contentused">
+            {/* <div className="nav-menu-wrapper">
         <img src={menu} alt="" />
       </div> */}
-
-      <div className="project-back-section">
-        <Link to="/">
-          <img
-            src={theme === "light-theme" ? arrowback : arrowbackwhite}
-            alt=""
-            className="backarrow"
-          />
-        </Link>
-        <div className="subHeader proview-Header">Cuurency</div>
-      </div>
-      <div className="pro-view-para para ">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, nisi
-        minima sunt ut quos eaque repudiandae minus sit facilis enim harum
-        corrupti dicta quia! Quasi repellendus recusandae possimus qui unde.
-      </div>
-
-      <img src={product} alt="" className="product-image" />
-      <div className="pro-view-para para navpro">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, nisi
-      </div>
-      <div className="button-wrapper">
-        <button className="button para">
-          Currency App <img src={arrow} alt="" onClick={<Link>id</Link>} />
-        </button>
-      </div>
-      <div className="project-list-header">works</div>
-      <div className="project-wrapper">
-        {/* <div className="gradientviewR" onClick={handleScrollLeft}>
+            <div className="project-back-section">
+              <Link to="/">
+                <img
+                  src={theme === "light-theme" ? arrowback : arrowbackwhite}
+                  alt=""
+                  className="backarrow"
+                />
+              </Link>
+              <div className="subHeader proview-Header">{work.title}</div>
+            </div>
+            <div className="pro-view-para para ">{work.para}</div>
+            <img src={work.img} alt="" className="product-image" />
+            <div className="pro-view-para para navpro">{work.footerpara}</div>
+            {/* <div className="pro-view-para para navpro">
+              Source code and more details in the below Documentation
+            </div> */}
+            <div className="button-wrapper">
+              <a href={work.link} target="_blank">
+                <button className="button para">
+                  {work.title} <img src={arrow} alt="" />
+                </button>
+              </a>
+            </div>
+            <div className="notionIcon-wrpr">
+              <div className="notion-links para">Documentation:</div>
+              <div className="icon-wrpr">
+                <a href={work.notion} target="_blank">
+                  <img src={notionIcon} className="notionIcon" />
+                </a>
+                <a href={work.github} target="_blank">
+                  <img src={GitIcon} className="githubIcon" />
+                </a>
+              </div>
+            </div>
+            <div className="more-links-wrapper"></div>
+            <div className="project-list-header">works</div>
+            <div className="project-wrapper">
+              {/* <div className="gradientviewR" onClick={handleScrollLeft}>
           <img src={arrowIcon} alt="" />
         </div>
         <div className="gradientviewL" onClick={handleScrollRight}>
           <img src={arrowIcon} alt="" />
         </div> */}
-        <div className="project-nav-wrapper">
-          <div
-            className={`scrolls`}
-            style={{
-              transform: `translateX(${translateX}px)`,
-              transitionDuration: "500ms",
-            }}
-          >
-            <ProjectNav className="project-nav " />
-            <ProjectNav className="project-nav" />
-            <ProjectNav className="project-nav" />
+              <div className="project-nav-wrapper">
+                <div
+                  className={`scrolls`}
+                  style={{
+                    transform: `translateX(${translateX}px)`,
+                    transitionDuration: "500ms",
+                  }}
+                >
+                  {newArray.map((item) => {
+                    return <ProjectNav className="project-nav" data={item} />;
+                  })}
+                  {/* <ProjectNav className="project-nav" /> */}
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
+        );
+      })}
     </div>
   );
 }

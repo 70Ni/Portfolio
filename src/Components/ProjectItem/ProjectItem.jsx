@@ -1,6 +1,7 @@
 import React from "react";
 import Project from "./Project";
 import Skills from "./Skills";
+import content from "../../api/Content.json";
 
 function ProjectItem({ header }) {
   return (
@@ -20,20 +21,22 @@ function ProjectItem({ header }) {
         <div className="description-wrapper">
           {header === "Projects" ? (
             <div>
-              <Project />
-              <Project />
-              <Project />
+              {content.map((item) => {
+                return <Project data={item} />;
+              })}
             </div>
           ) : (
             <div className="skills-wrap">
-              <Skills skill="ReactJs" />
-              <Skills skill="Js" />
               <Skills skill="HTML" />
+              <Skills skill="React" />
+              <Skills skill="Node" />
+              <Skills skill="Js" />
               <Skills skill="CSS" />
+              <Skills skill="Tailwind" />
               <Skills skill="MongoDB" />
-              <Skills skill="MongoDB" />
-              <Skills skill="MongoDB" />
-              <Skills skill="MongoDB" />
+              <Skills skill="Typescript" />
+              {/* <Skills skill="MongoDB" />
+              <Skills skill="MongoDB" /> */}
             </div>
           )}
         </div>

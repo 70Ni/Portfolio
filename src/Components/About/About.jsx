@@ -9,7 +9,7 @@ import { useState } from "react";
 const email = "4thedevelopments@gmail.com";
 const link = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}`;
 
-function About() {
+function  About() {
   const [copyMessage, setcopy] = useState(false);
 
   useEffect(() => {

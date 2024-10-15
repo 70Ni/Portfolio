@@ -16,9 +16,9 @@ function Navigation() {
       <Link to="/projects">
         <div className="navItem">Projects</div>
       </Link>
-      <Link>
+      {/* <Link>
         <div className="navItem">email</div>
-      </Link>
+      </Link> */}
 
       <img
         src={theme === "dark-theme" ? dark : light}

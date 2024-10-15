@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 :root {
   --primary-dark: #1d1d1d;
@@ -164,6 +165,30 @@
   color: #555555;
   cursor: pointer;
   text-decoration: none;
+}
+.notionIcon {
+  width: 32px;
+  margin-left: 14px;
+  cursor: pointer;
+}
+.githubIcon {
+  width: 52px;
+  margin-left: 24px;
+  cursor: pointer;
+}
+.notion-links {
+  padding: 14px 0px;
+  color: var(--text-font-color);
+  margin-left: 24px;
+}
+.notionIcon-wrpr {
+  border-radius: 14px;
+  display: flex;
+  padding: 4px;
+  margin: 14px 0px;
+  background-color: var(--button-white);
+  align-items: center;
+  margin-bottom: 44px;
 }
 a {
   text-decoration: none;
@@ -403,6 +428,9 @@ a {
   }
   .about-det-w {
     margin-top: 14px;
+  }
+  .notionIcon-wrpr {
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 320px) {
