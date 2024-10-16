@@ -10,12 +10,12 @@ function Navigation() {
   return (
     <div className="Navigation-wrapper">
       {/* <img src={menu} alt="" /> */}
-      <Link to="/">
+      <a href="/" target="_self">
         <div className="navItem">Home</div>
-      </Link>
-      <Link to="/projects">
+      </a>
+      <a href="/projects" target="_self">
         <div className="navItem">Projects</div>
-      </Link>
+      </a>
       {/* <Link>
         <div className="navItem">email</div>
       </Link> */}
