@@ -6,7 +6,7 @@
     "footerpara": "",
     "brief": "",
 
-    "link": "",
+    "link": "https://currency-exchange-murex.vercel.app/getting-started",
     "github": "https://github.com/70Ni/Currency-exchange",
     "notion": "https://aback-tourmaline-914.notion.site/Currency-converter-10af5c104b1b8011a8f0f2f45bfaeea7"
   },
@@ -32,16 +32,5 @@
     "link": "https://weather-app-ten-kappa-56.vercel.app/",
     "github": "https://github.com/70Ni/WeatherApp",
     "notion": "https://aback-tourmaline-914.notion.site/Weather-App-10af5c104b1b80d98699f0fe78677556?pvs=25"
-  },
-  {
-    "projectId": 4,
-    "title": "BankDash",
-    "para": "",
-    "footerpara": "",
-    "brief": "",
-
-    "link": "https://bankdashs-7o8r.vercel.app/home",
-    "github": "https://github.com/70Ni/bankdashs",
-    "notion": "https://aback-tourmaline-914.notion.site/Bankdash-116f5c104b1b80af9449c003ba18acae?pvs=25"
   }
 ]

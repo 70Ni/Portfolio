@@ -258,6 +258,9 @@ a {
   margin-left: 32px;
   cursor: pointer;
 }
+.cursor-pointer {
+  cursor: pointer;
+}
 .theme-changer:hover {
   background-color: var(--button-color);
   transition: 0.2s ease-in;

@@ -20,12 +20,6 @@
     "para": "The Weather App is a user-friendly application that provides real-time weather updates, forecasts. It caters to individuals and businesses looking to stay informed about weather conditions, helping them plan their activities accordingly.",
     "footerpara": "Source code and more Documentation below",
     "brief": "Weather application with details of temperature,humidity, and location "
-  },
-  {
-    "id": 4,
-    "title": "BankDash",
-    "para": "Bank dash is a dashboard UI, shows details about the credit cards and transactions.",
-    "footerpara": "Source code and more Documentation below",
-    "brief": "A Dashboard UI shows different transaction and analytics"
   }
 ]
+

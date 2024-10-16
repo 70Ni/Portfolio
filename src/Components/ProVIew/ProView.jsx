@@ -44,17 +44,17 @@ function ProView() {
   function getRandomFloat(min, max) {
     return Math.floor(Math.random() * (max - min) + min);
   }
-
+  const [Id, setId] = useState(0);
   // Example: Random float between 1 and 10
   const randomFloat = getRandomFloat(1, 4);
   console.log(randomFloat);
 
   const newArray = mergeJson.filter((item) => item[0].id !== randomFloat);
-  console.log(newArray);
-
+  console.log(mergeJson);
+  let index = Id !== 0 ? Id - 1 : Id;
   return (
     <div className="Project-preview-wrapper">
-      {mergeJson[randomFloat].map((work) => {
+      {mergeJson[index].map((work) => {
         return (
           <div className="contentused">
             {/* <div className="nav-menu-wrapper">
@@ -111,8 +111,15 @@ function ProView() {
                     transitionDuration: "500ms",
                   }}
                 >
-                  {newArray.map((item) => {
-                    return <ProjectNav className="project-nav" data={item} />;
+                  {mergeJson.map((item) => {
+                    return (
+                      <div
+                        className="cursor-pointer"
+                        onClick={() => setId(item[0].id)}
+                      >
+                        <ProjectNav className="project-nav" data={item} />
+                      </div>
+                    );
                   })}
                   {/* <ProjectNav className="project-nav" /> */}
                 </div>
