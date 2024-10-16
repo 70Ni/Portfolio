@@ -11,8 +11,9 @@
 }
 
 .profileImg {
-    max-width: 90px;
+    width: 90px;
     height: 90px;
+    border-radius: 500px;
     object-fit: cover;
     border-radius: 200px;
 }
