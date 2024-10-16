@@ -34,7 +34,7 @@ console.log(mergeJson);
 function ProView() {
   const { theme } = useContext(ThemeContext);
 
-  const [translateX, setTranslateX] = useState(0); // State to track the translation
+  const [translateX, setTranslateX] = useState(1); // State to track the translation
   console.log(translateX);
   const handleScrollLeft = () => setTranslateX((prev) => prev + 284); // Adjust the value for scroll distance
   const handleScrollRight = () => {
@@ -44,7 +44,7 @@ function ProView() {
   function getRandomFloat(min, max) {
     return Math.floor(Math.random() * (max - min) + min);
   }
-  const [Id, setId] = useState(0);
+  const [Id, setId] = useState(2);
   // Example: Random float between 1 and 10
   const randomFloat = getRandomFloat(1, 4);
   console.log(randomFloat);
