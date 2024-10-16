@@ -17,8 +17,8 @@
     "footerpara": "",
     "brief": "",
 
-    "link": "",
-    "github": "https://github.com/70Ni/salesandanalytics",
+    "link": "https://salesandanalytics.vercel.app/dashboard",
+    "github": "https://github.com/70Ni/salesandanalytics/",
     "notion": "https://aback-tourmaline-914.notion.site/Sales-Analytics-Dashboard-c8de7e925cc54cae8a2da338cd7bc507?pvs=25",
     "img": ""
   },
@@ -29,7 +29,7 @@
     "footerpara": "",
     "brief": "",
 
-    "link": "",
+    "link": "https://weather-app-ten-kappa-56.vercel.app/",
     "github": "https://github.com/70Ni/WeatherApp",
     "notion": "https://aback-tourmaline-914.notion.site/Weather-App-10af5c104b1b80d98699f0fe78677556?pvs=25"
   },
@@ -40,7 +40,7 @@
     "footerpara": "",
     "brief": "",
 
-    "link": "",
+    "link": "https://bankdashs-7o8r.vercel.app/home",
     "github": "https://github.com/70Ni/bankdashs",
     "notion": "https://aback-tourmaline-914.notion.site/Bankdash-116f5c104b1b80af9449c003ba18acae?pvs=25"
   }
